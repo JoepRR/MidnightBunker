@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Bunker - Event Calendar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-animated"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Midnight Bunker</a>
+            <a href="index.html" class="back-button">← Back to Home</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h1 class="title">MIDNIGHT BUNKER</h1>
+            <div class="events-list">
+                <h2>Upcoming Parties</h2>
+                <div id="events-container">
+                    <!-- Events will be populated by JavaScript -->
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Calendar Area -->
+        <main class="main-content">
+            <div class="calendar-header">
+                <button id="prev-month" class="nav-btn">&lt;</button>
+                <h2 id="current-month"></h2>
+                <button id="next-month" class="nav-btn">&gt;</button>
+            </div>
+            
+            <div class="calendar">
+                <div class="calendar-header-row">
+                    <div class="day-header">Sun</div>
+                    <div class="day-header">Mon</div>
+                    <div class="day-header">Tue</div>
+                    <div class="day-header">Wed</div>
+                    <div class="day-header">Thu</div>
+                    <div class="day-header">Fri</div>
+                    <div class="day-header">Sat</div>
+                </div>
+                <div id="calendar-grid" class="calendar-grid">
+                    <!-- Calendar days will be populated by JavaScript -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Event Modal -->
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-image"></div>
+            <div class="modal-info">
+                <h2 id="modal-dj"></h2>
+                <h3 id="modal-theme"></h3>
+                <p id="modal-date"></p>
+                <p id="modal-description"></p>
+                <button id="join-event" class="join-btn">Get Tickets</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day Schedule Modal -->
+    <div id="day-modal" class="day-modal">
+        <div class="day-modal-content">
+            <div class="day-modal-header">
+                <span class="day-modal-close">&times;</span>
+                <h2 class="day-modal-title" id="day-modal-title"></h2>
+                <p class="day-modal-date" id="day-modal-date"></p>
+            </div>
+            <div class="day-events-list" id="day-events-list">
+                <!-- Day events will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
