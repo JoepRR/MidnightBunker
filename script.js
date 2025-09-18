@@ -63,11 +63,6 @@ function setupEventListeners() {
             dayModal.style.display = 'none';
         }
     });
-
-    // Join event button
-    document.getElementById('join-event').addEventListener('click', () => {
-        alert('Ticket purchasing and event details coming soon! Follow us on social media for updates.');
-    });
 }
 
 // Render events in sidebar
@@ -269,6 +264,9 @@ function renderCalendar() {
 
 // Open event modal
 function openEventModal(event) {
+    // Close the day modal if open
+    dayModal.style.display = 'none';
+
     const modal = document.getElementById('event-modal');
     const modalImage = document.querySelector('.modal-image');
     const modalDj = document.getElementById('modal-dj');
