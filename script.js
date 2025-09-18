@@ -6,7 +6,8 @@ const events = [
         date: "2025-09-20T21:00:00Z",
         description: "description!",
         image: "https://img.rec.net/3j5p75hpxlqlp1x0vb4i61mvx.jpg?width=1920"
-    }
+    },
+    { "dj": "DJ JOEPIE", "theme": "NIGGER MUSIC", "date": "2025-09-19T15:50:00.000Z", "description": "hello my name is joep", "image": "https://img.rec.net/3j5p75hpxlqlp1x0vb4i61mvx.jpg?width=1920" }
 ];
 
 // Global variables
