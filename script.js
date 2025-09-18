@@ -6,7 +6,13 @@ const events = [
     "theme": "Riddim/Dubstep!",
     "date": "2025-09-25T21:00:00.000Z",
     "image": "https://img.rec.net/5vvlppuyolbzxw10sjt0x778u.png"
-},
+}, {
+    "dj": "Sunsleeper",
+    "about": "17 y/o trans DJ, producer, graphic designer and sim racer",
+    "theme": "90's - 2020's Dance",
+    "date": "2025-09-19T21:30:00.000Z",
+    "image": "https://img.rec.net/6c10r2ulyhph53z4flchj0rgk.jpg?width=1920"
+}
 ];
 
 // Global variables
