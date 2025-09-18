@@ -18,7 +18,7 @@ const events = [
     "about": "Musician",
     "theme": "Any",
     "date": "2025-09-20T21:45:00.000Z",
-    "image": "https://img.rec.net/3j5p75hpxlqlp1x0vb4i61mvx.jpg?width=1920"
+    "image": "https://cdn.discordapp.com/attachments/1418134392617828414/1418353561728712859/ea502fd23b482fe01a621afa7ea1d054.jpg?ex=68cdd030&is=68cc7eb0&hm=7a219b39fb5234ca45bb6e6b7dbde32776a02b5d3058fb9e671cedca827750fb&"
 }
 ];
 
