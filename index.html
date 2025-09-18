@@ -13,42 +13,41 @@
             box-sizing: border-box;
         }
 
+        /* --- Urban Graffiti-Inspired Color Palette --- */
         :root {
-            /* Dark Mode Color Palette */
-            --bg-primary: #0a0a0a;
-            --bg-secondary: #111111;
-            --bg-tertiary: #1a1a1a;
-            --bg-card: #0f0f0f;
-            --bg-glass: rgba(15, 15, 15, 0.8);
-            
-            --text-primary: #ffffff;
-            --text-secondary: #e5e5e5;
-            --text-muted: #a3a3a3;
-            --text-accent: #60a5fa;
-            
-            --accent-primary: #3b82f6;
-            --accent-secondary: #8b5cf6;
-            --accent-tertiary: #06b6d4;
-            --accent-success: #10b981;
-            --accent-warning: #f59e0b;
+            --bg-primary: #8B7C6B; /* Muted Brown for main background */
+            --bg-secondary: #CFCFCF; /* Light Gray for overlays/depth */
+            --bg-tertiary: #4A4A4A; /* Dark Gray for shadows/overlays */
+            --bg-card: #2B3B26; /* Dark Green for cards/modal backgrounds */
+            --bg-glass: rgba(43, 59, 38, 0.85); /* Dark Green glass effect */
+
+            --text-primary: #EAE3D9; /* Soft Beige for main text */
+            --text-secondary: #FFFFFF; /* White for highlights/icons */
+            --text-muted: #CFCFCF; /* Light Gray for muted text */
+            --text-accent: #A4D65E; /* Bright Green for accent text */
+
+            --accent-primary: #A4D65E; /* Bright Green */
+            --accent-secondary: #76B84F; /* Bright Green */
+            --accent-tertiary: #4B8130; /* Darker Green */
+            --accent-warning: #FFE96F; /* Warm Yellow for buttons/highlights */
             --accent-error: #ef4444;
-            
-            --border-primary: #262626;
-            --border-secondary: #404040;
-            --border-accent: #3b82f6;
-            
-            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
-            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
-            --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.3);
-            
+
+            --border-primary: #2B3B26; /* Dark Green for borders */
+            --border-secondary: #4A4A4A; /* Dark Gray for subtle borders */
+            --border-accent: #A4D65E; /* Bright Green for accent borders */
+
+            --shadow-sm: 0 1px 2px 0 rgba(44, 59, 38, 0.3);
+            --shadow-md: 0 4px 6px -1px rgba(44, 59, 38, 0.4);
+            --shadow-lg: 0 10px 15px -3px rgba(44, 59, 38, 0.5);
+            --shadow-xl: 0 20px 25px -5px rgba(44, 59, 38, 0.6);
+            --shadow-glow: 0 0 20px rgba(164, 214, 94, 0.3);
+
             --radius-sm: 0.375rem;
             --radius-md: 0.5rem;
             --radius-lg: 0.75rem;
             --radius-xl: 1rem;
             --radius-2xl: 1.5rem;
-            
+
             --transition-fast: 0.15s ease-out;
             --transition-normal: 0.3s ease-out;
             --transition-slow: 0.5s ease-out;
@@ -56,12 +55,25 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: var(--bg-primary);
+            background: linear-gradient(135deg, var(--bg-primary) 60%, var(--bg-secondary) 100%);
             color: var(--text-primary);
             line-height: 1.6;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            position: relative;
+        }
+
+        /* Graffiti-inspired geometric highlights */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none;
+            background: url('https://www.transparenttextures.com/patterns/brick-wall.png'),
+                linear-gradient(120deg, rgba(255,255,255,0.08) 0%, transparent 100%);
+            opacity: 0.25;
+            z-index: 0;
         }
 
         /* Animated Background */
@@ -73,9 +85,9 @@
             height: 100%;
             z-index: -1;
             background: 
-                radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 40% 40%, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
+                radial-gradient(circle at 20% 80%, var(--accent-primary) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, var(--accent-warning) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, var(--accent-secondary) 0%, transparent 50%);
             animation: backgroundShift 20s ease-in-out infinite;
         }
 
