@@ -663,8 +663,9 @@
         }
 
         .footer p {
-            color: var(--text-muted);
+            color: var(--text-primary); /* Make footer text visible on light background */
             margin-bottom: 1rem;
+            text-shadow: 1px 1px 2px var(--border-primary); /* Add subtle shadow for readability */
         }
 
         .footer-links {
@@ -676,9 +677,11 @@
         }
 
         .footer-links a {
-            color: var(--text-muted);
+            color: var(--accent-warning); /* Warm yellow for links */
             text-decoration: none;
             transition: color var(--transition-fast);
+            font-weight: 600;
+            text-shadow: 1px 1px 2px var(--border-primary);
         }
 
         .footer-links a:hover {
