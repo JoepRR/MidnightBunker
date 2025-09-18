@@ -5,7 +5,7 @@ const events = [
         theme: "Deep House Nights",
         date: "2025-09-20T21:00:00Z",
         description: "description!",
-        image: "https://source.unsplash.com/400x200/?dj,party,nightclub"
+        image: "https://img.rec.net/3j5p75hpxlqlp1x0vb4i61mvx.jpg?width=1920"
     }
 ];
 
