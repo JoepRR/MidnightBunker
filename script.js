@@ -17,7 +17,7 @@ const events = [
     "dj": "Flux",
     "about": "Musician",
     "theme": "Any",
-    "date": "2025-09-18T21:45:00.000Z",
+    "date": "2025-09-20T21:45:00.000Z",
     "image": "https://img.rec.net/3j5p75hpxlqlp1x0vb4i61mvx.jpg?width=1920"
 }
 ];
