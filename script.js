@@ -1,12 +1,12 @@
 // Events Data - Easy to manage by just adding new objects here
 const events = [
     {
-        dj: "DJ Template",
-        theme: "Deep House Nights",
-        date: "2025-09-20T21:00:00Z",
-        description: "description!",
-        image: "https://img.rec.net/3j5p75hpxlqlp1x0vb4i61mvx.jpg?width=1920"
-    },
+    "dj": "-=DJ Xy-Lo=-",
+    "about": "I love music that gets ppl going!",
+    "theme": "Riddim/Dubstep!",
+    "date": "2025-09-25T21:00:00.000Z",
+    "image": "https://img.rec.net/5vvlppuyolbzxw10sjt0x778u.png"
+},
 ];
 
 // Global variables
