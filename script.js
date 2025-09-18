@@ -12,6 +12,13 @@ const events = [
     "theme": "90's - 2020's Dance",
     "date": "2025-09-19T21:30:00.000Z",
     "image": "https://img.rec.net/6c10r2ulyhph53z4flchj0rgk.jpg?width=1920"
+},
+{
+    "dj": "Flux",
+    "about": "Musician",
+    "theme": "Any",
+    "date": "2025-09-18T21:45:00.000Z",
+    "image": "https://img.rec.net/3j5p75hpxlqlp1x0vb4i61mvx.jpg?width=1920"
 }
 ];
 
